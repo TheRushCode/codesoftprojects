@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rushikesh waghmare - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+  emailjs.init("O-d_iX2B2LzSgv8kf");
+</script>
+
+<script src="./contact.js"></script>
+
+
+<body>
+    <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+        </label>
+    </div>
+
+    <header class="navbar">
+        <div class="logo">Portfolio</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Project</a></li>
+                <li><a href="#contact ">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <p>Hello, It's Me</p>
+                <h1>Rushikesh</h1>
+                <p>And I'm a <span id="typing-text"></span></p>
+                <p class="description">I'm a Web Developer with some projects of experience. My expertise is
+                    to create and website design, Frontend design, and many more ....</p>
+                <a href="#about" class="btn">More About Me</a>
+            </div>
+            <div class="hero-image-container">
+                <div class="glowing-circle">
+                    <img src="photo2.jpg" alt="Rushikesh">
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="About-section">
+            <h2>About Me</h2>
+            <h3>Full Stack Developer!</h3>
+            <p>I’m a beginner web developer who enjoys learning how things work behind the scenes of the web. I’m
+                currently exploring both frontend and backend development, focusing on building simple, clean, and
+                responsive websites.
+
+                At the same time, I’m learning Data Science and Cybersecurity, because I’m curious about how data can be
+                used to make better decisions and how websites and systems can be kept safe from threats. I like
+                understanding not just how to build something, but also how to make it secure, reliable, and meaningful.
+
+                I care a lot about user experience-even small details that make a website easy and comfortable to use.
+                As I continue learning, I’m working on projects that help me grow step by step and move closer to
+                building secure, data-driven, and user-friendly applications.</p>
+            <a href="#services" class="btn">More About Me</a>
+        </section>
+
+        <section id="services" class="services-section">
+            <h2>My Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Web Development</h3>
+                    <p>I build clean, responsive, and user-friendly websites using modern frontend and backend
+                        technologies, focusing on smooth performance and good user experience.</p>
+                    <a href="#" class="learn-more">learn more</a>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Cybersecurity Basics</h3>
+                    <p>I help in identifying basic security issues in websites and apply simple best practices to make
+                        web applications safer and more reliable.</p>
+                    <a href="#" class="learn-more">learn more</a>
+                </div>
+                <!-- <div class="service-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>App Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Pariatur possimus voluptate iste
+                        temporibus impedit reiciendis praesentium, eaque molestiae officia voluptates exercitationem?
+                        Est recusandae dolorem culpa qui incidunt, velit itaque nulla!</p>
+                    <a href="#" class="learn-more">learn more</a>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="technical-skills">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span class="skill-name">HTML</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 90%;"></div>
+                        </div>
+                        <span class="skill-percent">90%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">CSS</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                        <span class="skill-percent">80%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">JavaScript</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 95%;"></div>
+                        </div>
+                        <span class="skill-percent">95%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">Python</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                        <span class="skill-percent">50%</span>
+                    </div>
+                    <div class="skill">
+                        <span class="skill-name">React</span>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 15%;"></div>
+                        </div>
+                        <span class="skill-percent">15%</span>
+                    </div>
+                </div>
+                <div class="professional-skills">
+                    <h3>Professional Skills</h3>
+                    <div class="professional-grid">
+                        <div class="skill-circle">
+                            <div class="progress-ring">
+                                <svg width="120" height="120">
+                                    <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="ring" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 90) / 100);"></circle>
+                                </svg>
+                                <span class="circle-percent">90%</span>
+                            </div>
+                            <span class="circle-label">Creativity</span>
+                        </div>
+                        <div class="skill-circle">
+                            <div class="progress-ring">
+                                <svg width="120" height="120">
+                                    <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="ring" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 65) / 100);"></circle>
+                                </svg>
+                                <span class="circle-percent">65%</span>
+                            </div>
+                            <span class="circle-label">Communication</span>
+                        </div>
+                        <div class="skill-circle">
+                            <div class="progress-ring">
+                                <svg width="120" height="120">
+                                    <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="ring" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 75) / 100);"></circle>
+                                </svg>
+                                <span class="circle-percent">75%</span>
+                            </div>
+                            <span class="circle-label">Problem Solving</span>
+                        </div>
+                        <div class="skill-circle">
+                            <div class="progress-ring">
+                                <svg width="120" height="120">
+                                    <circle class="ring-bg" cx="60" cy="60" r="50"></circle>
+                                    <circle class="ring" cx="60" cy="60" r="50"
+                                        style="stroke-dashoffset: calc(314 - (314 * 85) / 100);"></circle>
+                                </svg>
+                                <span class="circle-percent">85%</span>
+                            </div>
+                            <span class="circle-label">Teamwork</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <h2>Latest Project</h2>
+            <div class="projects-grid">
+                <!-- <div class="project-card">
+                    <img src="ui and ux design.jpg" alt="Project 1">
+                    <h3>UI/UX Design</h3>
+                </div> -->
+<a href="https://therushcode.github.io/codesoft1portfolio/"
+   target="_blank"
+   class="project-link">
+
+  <div class="project-card">
+    <img src="portfolio.jpg" alt="Portfolio Website Project">
+    <h3>Portfolio Website Development</h3>
+  </div>
+
+</a>
+
+<a href="https://therushcode.github.io/codesoft2LandingPage/#features"
+   target="_blank"
+   class="project-link">
+
+  <div class="project-card">
+    <img src="Landing Page.png" alt="Landing Page Project">
+    <h3>Landing Page Task</h3>
+  </div>
+
+</a>
+
+                <!-- <div class="project-card">
+                    <img src="app.jpg" alt="Project 3">
+                    <h3>App Design</h3>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <h2>Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Let's Work Together</h3>
+                    <p>I’m always excited to learn, collaborate, and work on meaningful projects. If you have an idea, a
+                        small project, or just want to connect, feel free to reach out. Let’s build something great
+                        together.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/rushi.waghmare.2025/about_contact_and_basic_info"><i
+                                class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/rushikesh_0fficial?igsh=cTJxb2pzZ2hilc250"><i
+                                class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/rushikesh-waghmare/"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <form id="contact-form" class="contact-form">
+
+                    <input type="text" name="name" placeholder="Enter Your Name" required />
+
+                    <input type="email" name="email" placeholder="Enter Your Email" required />
+
+                    <input type="text" name="subject" placeholder="Enter Your Subject" required />
+
+                    <textarea name="message" placeholder="Enter Your Message" required></textarea>
+
+                    <button type="submit" class="btn">Submit</button>
+
+                </form>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Rushikesh Waghmare. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <canvas id="bubbleCanvas"></canvas>
+    <script src="bubbles.js"></script>
+
+</body>
+
+</html>
+
+
+
