@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertex - Creative Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+
+<body>
+
+    <header id="navbar">
+        <div class="logo">Vertex </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div style="display: flex; gap: 15px; align-items: center;">
+            <a href="#" class="cta-button">Join Now</a>
+            <button id="theme-toggle" class="theme-btn">🌙</button>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content hidden">
+            <h1>Design Without Limits</h1>
+            <p>Create beautiful web experiences with clean code.
+                A perfect starting point for your web development journey.</p>
+            <div class="hero-buttons">
+                <a href="#features" class="btn primary">Explore Features</a>
+                <a href="#" class="btn secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title hidden">Why Choose Us?</h2>
+            <div class="grid-wrapper">
+
+                <div class="card hidden">
+                    <div class="icon">✨</div>
+                    <h3>Modern UI</h3>
+                    <p>Clean lines, soft gradients, and generous whitespace for a premium look.</p>
+                </div>
+
+                <div class="card hidden">
+                    <div class="icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Built with CSS Grid to look perfect on mobile, tablet, and desktop screens.</p>
+                </div>
+
+                <div class="card hidden">
+                    <div class="icon">🚀</div>
+                    <h3>Fast Performance</h3>
+                    <p>Lightweight HTML and optimized CSS ensures lightning fast load times.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title hidden">Get In Touch</h2>
+
+            <div class="contact-wrapper">
+
+                <div class="contact-info hidden">
+                    <h3>Let's Talk</h3>
+                    <p class="sub-text">Have a project in mind? Fill out the form or send us an email to get started.
+                    </p>
+
+                    <div class="info-item">
+                        <span class="icon">📧</span>
+                        <p>rushimusic2@gmail.com</p>
+                    </div>
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <p>123 Creative Studio, Tech City</p>
+                    </div>
+                </div>
+
+                <form id="contact-form" class="contact-form hidden">
+                    <div class="input-group">
+                        <input type="text" name="user_name" placeholder="Your Name" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="email" name="user_email" placeholder="Your Email" required>
+                    </div>
+                    <div class="input-group">
+                        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" id="submit-btn" class="btn primary">Send Message</button>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lumina Project. Designed with HTML, CSS & JS.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
