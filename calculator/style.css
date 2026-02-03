@@ -1,0 +1,68 @@
+/* COMMON */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s;
+}
+
+#themeToggle {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.calculator {
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px;
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+/* GRID */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* BUTTON TYPES */
+.number { background: #555; color: white; }
+.operator { background: #ff9500; color: white; }
+.clear { background: #ff3b3b; color: white; }
+.backspace { background: #777; color: white; }
+
+/* LIGHT MODE */
+body.light { background: #f2f2f2; }
+body.light .calculator { background: #fff; }
+body.light .number { background: #ddd; color: black; }
+body.light .backspace { background: #bbb; color: black; }
+
+/* DARK MODE */
+body.dark { background: #121212; }
+body.dark .calculator { background: #222; }
+body.dark .number,
+body.dark .backspace { background: #555; color: white; }
